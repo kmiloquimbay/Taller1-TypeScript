@@ -28,7 +28,7 @@ function showSeries(series: any[]): void {
     const averageSeasons = Math.round(totalSeasons / series.length);
 
     let averageText: HTMLElement = document.createElement('p');
-    averageText.className = 'mt-3';
+    averageText.className = 'mt-3 avg-text';
     averageText.textContent = `Average number of seasons: ${averageSeasons}`;
 
     seriesTable.parentElement!.appendChild(averageText);
